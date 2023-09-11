@@ -85,10 +85,10 @@
       
       public function GetLinkMySQLI()
       {
-        $usuario = 'xxxxxxxxxx ';
-        $senha = 'xxxxxxxxxxxx';
-        $database = 'xxxxxccxx';
-        $host = 'xxxxxxxxxxxxc';
+        $usuario = 'if0_34449232 ';
+        $senha = 'vYP7KAmHCI';
+        $database = 'if0_34449232_CRM_Body';
+        $host = 'sql301.infinityfree.com';
         
         $mysqli = new mysqli($host, $usuario, $senha, $database);
         return $mysqli;
