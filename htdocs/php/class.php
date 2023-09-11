@@ -22,7 +22,7 @@
         {
             $user = base64_encode($user);            
             global $pdo;  
-            $sql = $pdo->prepare("SELECT ID_AT FROM ATENDENTES WHERE USER_AT = :u AND HASH_AT = :h");  
+            $sql = $pdo->prepare("SELECT ID_AT FROM ATENDENTE WHERE USER_AT = :u AND HASH_AT = :h");  
             $sql->bindValue(":u", $user);
             $sql->bindValue(":h", $password);    //lembrar de aplicar criptografia depois
             //$sql = $pdo->prepare("SELECT id_user FROM usuarios WHERE nome_user = '".$user."' AND hash_user = '".$password."'");  
