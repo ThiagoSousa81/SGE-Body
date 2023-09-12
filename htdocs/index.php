@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <?php
-require_once 'php/class.php';
-include('protection.php');
-
+require_once '../php/class.php';
 $cls = new database;
-
-if(!isset($_SESSION)) {
-  session_start();
-}
-
-if(isset($_SESSION['ID_AT'])) {
-  
-  //$mysqli = $cls->GetLinkMySQLI();
-  $link = $cls->GetLinkMySQLI();
-  if($mysqli->error) {
-    die("Falha ao conectar ao banco de dados: " . $mysqli->error);
-  }
-
-  $query = mysqli_query($link, "SELECT * FROM ATENDENTE WHERE ID_AT = ".$_SESSION['ID_AT']);
-  $User = mysqli_fetch_array($query);
-
 ?>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM-Body - Painel</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css?_cacheOverride=1691177712738"
-        rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<html lang="pt-br"><head>
+  <title>CRM-Body - Login</title>
+  <meta charset="utf-8">
+  <link href="/css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css?_cacheOverride=1691177712738" rel="stylesheet">
+  
 </head>
+<body>
+  <section class="s1">                          
+               <h3>Faça login para continuar</h3>
+               <?php
+               if (isset($_POST['email']) || isset($_POST['password']))
+               {
+                  $user = addslashes($_POST['email']);
+                  $pass = addslashes($_POST['password']);
+                  $pass = sha1($pass);
 
-<body class="bg-secondary">
-  <style>
-    .fill{
-      width: 100%;
-    }
-    .padding-to-button{
-      margin-block: 5px;
-    }
-  </style>
+                  if (!empty($user) && !empty($pass))
+                  {
+                    $cls->conectar('if0_34449232_CRM_Body', 'sql301.infinityfree.com', 'if0_34449232', 'vYP7KAmHCI');
+                    if ($cls->msg == "")
+                    {
+                      if($cls->GetUserByEmail($user) == true)
+                      {
+                        if ($cls->login($user, $pass))
+                        {
+                          header("Location: ../");
+                        }
+                        else
+                        {
+                          ?>
 
-
-<header id="header"></header>
-
-<div class="d-flex">
-
-  <nav id="sidebar" class="bg-dark"></nav>
-
-  
-</div>
-<footer id="footer"></footer>
-<script>
-  const sidebar = document.getElementById('sidebar');
-  const content = document.getElementById('content');
-  const sidebarToggle = document.getElementById('sidebar-toggle');
-
-  sidebarToggle.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
-    content.classList.toggle('active');
-  });
-</script>
-
-    
-    <!--Scripts externos: Bootstrapp 5-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-     <!--Scripts externos: React DOM-->
-     <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.development.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.development.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-plugin-transform-react-jsx/6.24.1/transform-react-jsx.min.js"></script>
-      
-     <!--Meus Componentes-->
-     <script type="text/babel" src="/js/header.js" data-plugins="transform-react-jsx"></script>
-     <script type="text/babel" src="/js/navbar.js" data-plugins="transform-react-jsx"></script>
-     <script type="text/babel" src="/js/footer.php" data-plugins="transform-react-jsx"></script>
-
-     <script type="text/babel" data-plugins="transform-react-jsx">
-            
-        ReactDOM.render(<Header />, document.getElementById('header'));
-        ReactDOM.render(<NavBar nome="<?php echo (base64_decode($User[1]));?>"/>, document.getElementById('sidebar'));
-        ReactDOM.render(<Footer />, document.getElementById('footer'));
-        //ReactDOM.render(<Section1 />, document.getElementById('first-message'));
-        
-        //
-        
-        
-      </script>
-
-</body>
-
-</html>
-
-
-<?php
-}
-
-?>
+                          <div class="alert alert-danger" style="margin-top: 5px"><strong>Login ou senha incorretos!</strong></div>
+              
+              
+                          <?php
+                        }
+                      }
+                      else
+                      {                      
+                        echo '<div class="alert alert-danger" style="margin-top: 5px"><strong>Você não tem permissão de acesar o sistema!<br>Entre em <a href="https://thiagosousa81.wordpress.com/#contato"><b>contato</b></a> com o administrador.</strong></div>';                       
+                      }
+                    }
+                    else
+                    {
+                    //echo "Erro ao conectar!!!".$cls->msg;
+                    ?>
+                      <div class="alert alert-danger" style="margin-top: 5px"><strong>Erro na conexão com banco de dados!</strong></div>
+                     <?php
+                     echo $cls->msg;
+                    }                    
+                  }
+                  else
+                  {
+                    echo('<div class="alert alert-danger" style="margin-top: 5px"><strong>Preencha todos os campos!</strong></div>');
+                  }
+               }
+               
+               ?>
+              <form method="POST">
+                <div class="input-group" style="
+                                                margin-block: 5px;
+                                                ">
+                  
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Usuário">
+                </div>
+                <div class="input-group" style="
+                                                margin-block: 5px;
+                                                ">
+                  
+                  <input id="password" type="password" class="form-control" name="password" placeholder="Senha">
+                </div>
+                <div class=" input-group-btn">                  
+                  <input id="button" type="submit" class="form-control btn btn-danger" style="font-weight: bold; margin-block-end: 5px;" name="button" value="ENTRAR">
+                </div>
+                <!--<p style="
+                  font-size: 11pt;
+                  ">Não tem uma conta? <a href="/singup/" style="color: white"><b>Cadastre-se agora!</b></a></p>-->
+              </form>
+   
+  </section>
+  <footer class="rodape">
+    <p class="text-center">Desenvolvido por <a href="http://thiagosousa81.wordpress.com"><b>Thiago Sousa</b></a> <br> <a href="http://ebs-systems.epizy.com/"><b>EBS Security Systems</b></a></p>
+  </footer>
+</body></html>
