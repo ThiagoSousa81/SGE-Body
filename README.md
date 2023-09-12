@@ -1,2 +1,7 @@
-# CRM-Whatsapp
-Aplicação de CRM integrado com WhatsApp multi-usuário
+ 
+## Aplicação de CRM Multiusuário integrado com WhatsApp
+
+-    <details><summary>Login</summary>
+        User: Admin <Br>
+        Senha: Admin123
+        </details>
