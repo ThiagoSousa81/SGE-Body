@@ -42,7 +42,7 @@
         }
       
       
-      public function GetUser($id)
+      /*public function GetUser($id)
       {
         try {
 
@@ -57,7 +57,7 @@
         } catch (Exception $e) {
           $msg = $e->getMessage();
         }            
-      }
+      }*/
       
       public function GetUserByEmail($email)
       {
@@ -70,7 +70,7 @@
           $conexao = mysqli_connect($servidor, $username, $password, $database) 
             or die("Erro ao conectar ao banco de dados");
           
-          $query = mysqli_query($conexao, "SELECT ATIVO_FUNCIONARIO FROM FUNCIONARIOS WHERE USER_FUNCIONARIO = '".$email."' AND ATIVO_FUNCIONARIO = '1'");
+          $query = mysqli_query($conexao, "SELECT ATIVO_AT FROM ATENDENTE WHERE USER_AT = '".$email."' AND ATIVO_AT = '1'");
 
           if (mysqli_num_rows($query) > 0) {
             return true;
