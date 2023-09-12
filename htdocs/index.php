@@ -77,7 +77,7 @@ if(isset($_SESSION['ID_AT'])) {
       
      <!--Meus Componentes-->
      <script type="text/babel" src="/js/header.js" data-plugins="transform-react-jsx"></script>
-     <script type="text/babel" src="/js/navbar.php" data-plugins="transform-react-jsx"></script>
+     <script type="text/babel" src="/js/navbar.js" data-plugins="transform-react-jsx"></script>
      <script type="text/babel" src="/js/footer.php" data-plugins="transform-react-jsx"></script>
 
      <script type="text/babel" data-plugins="transform-react-jsx">
