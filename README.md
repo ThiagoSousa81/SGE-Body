@@ -1,7 +1,13 @@
  
-## Aplicação de CRM Multiusuário integrado com WhatsApp
+## Sistema de Gestão Empresarial para Body Suplemetos
 
-<details><summary><h3>Login</h3></summary>
+<details><summary><h3>Financeiro</h3></summary>
+
+### Propriedades
+
+</details>
+
+<!---<details><summary><h3>Login</h3></summary>
 
     User: Admin 
     Senha: Admin123
@@ -17,3 +23,4 @@
 - Evolution API [link](https://www.youtube.com/watch?v=LYf9CI7-KHs)
 
 </details>
+--->
