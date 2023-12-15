@@ -47,6 +47,8 @@ O objetivo é a precificação do produto
 | Taxa de cartão R$ | Saída do sistema (real): Taxa de cartão (porcentagem) * Preço de venda praticado (real) |
 | Imposto % | Entrada no sistema (porcentagem) |
 | Imposto R$ | Saída do sistema (real): Porcentagem do imposto * preço de venda praticado (real) | 
+| Comissão % | Entrada no sistema (porcentagem) | 
+| Comissão R$ | Saída do sistema (real): porcentagem da comissão * preco de venda (real) | 
 
 </details>
 
