@@ -3,7 +3,32 @@
 
 <details><summary><h3>Financeiro</h3></summary>
 
-### Propriedades
+O objetivo é a precificação do produto
+
+### Definindo as propriedades
+
+- Nome do produto (ou kit de venda)
+- Preço de venda praticado
+- Custo bruto do produto (CMV)
+- Frete
+- Taxa de cartão (%)
+- Taxa de cartão (R$)
+- Imposto (%)
+- Imposto (R$)
+- Comissão (%)
+- Comissão (R$)
+- Total de custos
+- Margem de lucro (R$)
+- Margem de lucro (%)
+- Margem de lucro desejada (%)
+- Margem de lucro desejada (R$)
+- Fator de Correção
+- Valor de venda necessário
+- Margem mínima (20%, 15%, 10%)
+- CPA margem (20%, 15%, 10%)
+- ROAS margem (20%, 15%, 10%)
+
+
 
 </details>
 
