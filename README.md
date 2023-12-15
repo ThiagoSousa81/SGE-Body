@@ -1,11 +1,14 @@
  
 ## Sistema de Gestão Empresarial para Body Suplemetos
 
-<details><summary><h3>Financeiro</h3></summary>
+<details><summary><h3>Precificação</h3></summary>
+
+
+
 
 O objetivo é a precificação do produto
 
-### Definindo as propriedades
+<details><summary><h3>Definindo as propriedades</h3></summary>
 
 - Nome do produto (ou kit de venda)
 - Preço de venda praticado
@@ -29,7 +32,10 @@ O objetivo é a precificação do produto
 - ROAS margem (20%, 15%, 10%)
 
 
-### Definindo como atributos
+</details>
+
+
+<details><summary><h3>Detalhando os atributos</h3></summary>
 
 | Nome | Origem |
 | --- | --- |
@@ -39,7 +45,7 @@ O objetivo é a precificação do produto
 | Frete | Entrada no sistema (real) |
 | Taxa de cartão | Entrada no sistema (porcentagem) |
 
-
+</details>
 
 </details>
 
