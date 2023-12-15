@@ -29,6 +29,17 @@ O objetivo é a precificação do produto
 - ROAS margem (20%, 15%, 10%)
 
 
+### Definindo como atributos
+
+| Nome | Origem |
+| --- | --- |
+| Nome do produto (ou kit de venda) | Entrada no sistema (texto) |
+| Preço de venda praticado | Entrada no sistema (real) |
+| Custo bruto do produto (CMV) | Entrada no sistema (real) |
+| Frete | Entrada no sistema (real) |
+| Taxa de cartão | Entrada no sistema (porcentagem) |
+
+
 
 </details>
 
