@@ -43,7 +43,10 @@ O objetivo é a precificação do produto
 | Preço de venda praticado | Entrada no sistema (real) |
 | Custo bruto do produto (CMV) | Entrada no sistema (real) |
 | Frete | Entrada no sistema (real) |
-| Taxa de cartão | Entrada no sistema (porcentagem) |
+| Taxa de cartão % | Entrada no sistema (porcentagem) |
+| Taxa de cartão R$ | Saída do sistema (real): Taxa de cartão (porcentagem) * Preço de venda praticado (real) |
+| Imposto % | Entrada no sistema (porcentagem) |
+| Imposto R$ | Saída do sistema (real): Porcentagem do imposto * preço de venda praticado (real) | 
 
 </details>
 
