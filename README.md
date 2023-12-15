@@ -49,6 +49,8 @@ O objetivo é a precificação do produto
 | Imposto R$ | Saída do sistema (real): Porcentagem do imposto * preço de venda praticado (real) | 
 | Comissão % | Entrada no sistema (porcentagem) | 
 | Comissão R$ | Saída do sistema (real): porcentagem da comissão * preco de venda (real) | 
+| Total de custos R$ | Saída do sistema (real): Custo bruto + Frete + Taxa de cartão R$ + Imposto R$ + Comissão R$ |
+
 
 </details>
 
