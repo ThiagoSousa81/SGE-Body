@@ -50,6 +50,7 @@ O objetivo é a precificação do produto
 | Comissão % | Entrada no sistema (porcentagem) | 
 | Comissão R$ | Saída do sistema (real): porcentagem da comissão * preco de venda (real) | 
 | Total de custos R$ | Saída do sistema (real): Custo bruto + Frete + Taxa de cartão R$ + Imposto R$ + Comissão R$ |
+| Margem de lucro R$ | Saída do sistema (real): Preço de venda - Total de custos |
 
 
 </details>
