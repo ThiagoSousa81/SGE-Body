@@ -15,19 +15,27 @@
         padding: 0px;
     }
 
-    btnMenu {}
+    @media screen {
+        .btnMenu {
+            
+        }
+    }
+    
 
     .menu {
         display: flex;
-        width: 20%;
-        height: 80vh;
+        width: 30%;
+        height: 90vh;
         background-color: gray;
         flex-direction: column;
     }
 
-    .cont {
-        display: flex;
-        height: 80vh;
+    .menu button {
+        margin: 5px;
+    }
+
+    .cont {        
+        height: 90vh;
     }
 
     .linha {
@@ -57,12 +65,11 @@
 
     <main class="linha">
         <div id="demo" class="collapse menu">
-            <h3>Título do menu</h3>
-            <ul>
-                <li>item 01</li>
-                <li>item 02</li>
-                <li>item 03</li>
-            </ul>
+            <h3>Administrador</h3>
+            <hr>
+            <button type="button" class="btn btn-dark">Dashboards</button>
+            <button type="button" class="btn btn-dark">Precificação</button>
+            <button type="button" class="btn btn-dark">Configurações</button>
         </div>
         <div class="cont">
             <h3>Dashboards</h3>
@@ -73,9 +80,9 @@
     </main>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid navbar-nav">
-            <span class="navbar-text">Sistema desenvolvido por <a class="" href="https://ebs-systems.epizy.com">EBS
-                    Systems</a></span>
+        <div class="container-fluid">
+            <span class="navbar-text">Sistema desenvolvido por <a style="text-decoration: none;" href="https://ebs-systems.epizy.com">EBS
+                Systems</a></span>
         </div>
     </nav>
 
