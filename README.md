@@ -57,7 +57,9 @@ O objetivo é a precificação do produto
 | Valor de venda necessário | Saída () |
 | Margem CPA % | |
 | Margem CPA R$ | |
-
+| ROAS % | |
+| ROAS R$ | |
+ 
 
 </details>
 
