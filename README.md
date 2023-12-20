@@ -53,6 +53,10 @@ O objetivo é a precificação do produto
 | Margem de lucro R$ | Saída do sistema (real): Preço de venda - Total de custos |
 | Margem de lucro Desejada R$ | Saída real |
 | Margem de lucro Desejada % | Entrada porcentagem | 
+| Fator de Correção | Entrada porcentagem |
+| Valor de venda necessário | Saída () |
+| Margem CPA % | |
+| Margem CPA R$ | |
 
 
 </details>
