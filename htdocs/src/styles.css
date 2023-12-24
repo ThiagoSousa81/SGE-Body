@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(14, 13, 13);
+}
+
+.logo {
+    width: 80px;
+}
+
+.menu {
+    display: flex;
+    width: 25vw;
+    height: 80vh;
+    background-color: gray;
+    flex-direction: column;
+    overflow: scroll;
+}
+@media (max-width: 1120px) {
+    .menu {
+        display: flex;
+        width: 75vw;
+        height: 90vh;
+        background-color: gray;
+        flex-direction: column;
+        overflow: scroll;
+    }
+}
+
+.menu button, h3{
+    margin: 5px;
+}
+
+.cont {
+    height: 80vh;
+    padding: 15px;
+    color: white;
+    width: 100%;
+    overflow: scroll;
+}
+
+#dtgProdutos {
+    width: 300%;
+}
+
+.padd{
+    margin-block: 5px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    display: flex;
+    align-itens: center;
+    justify-content: center;
+}
