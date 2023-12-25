@@ -68,7 +68,7 @@ include "header.php";
                     <a class="nav-link active" data-bs-toggle="tab" href="#home">Precificação</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#margem">Margem de Lucro</a>
+                    <a id="tab2" class="nav-link" data-bs-toggle="tab" href="#margem">Margem de Lucro</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="tab" href="#cpaeroas">CPA e ROAS</a>
@@ -88,30 +88,30 @@ include "header.php";
                             </div>
                             <div class="input-group-text padd">
                                 <label for="nome" class="form-label">*Preço de venda: R$&nbsp;</label>
-                                <input type="number" format="currency" precision="2" class="form-control" id="txtPV"
-                                    placeholder="ex: R$ 300,00" name="pv" style="width: 100%;" />
+                                <input type="text" format="currency" precision="2" class="form-control" id="txtPV"
+                                    value="0,00" placeholder="ex: R$ 300,00" name="pv" style="width: 100%;" />
                             </div>
                             <div class="input-group-text padd">
                                 <label for="nome" class="form-label">*Custo por produto (CMV): R$&nbsp;</label>
-                                <input type="number" format="currency" precision="2" class="form-control" id="txtCmv"
-                                    placeholder="ex: R$ 270,00" name="cmv" style="width: 100%;" />
+                                <input type="text" format="currency" precision="2" class="form-control" id="txtCmv"
+                                value="0,00" placeholder="ex: R$ 270,00" name="cmv" style="width: 100%;" />
                             </div>
                             <div class="input-group-text padd">
                                 <label for="nome" class="form-label">*Frete: R$&nbsp;</label>
-                                <input type="number" format="currency" precision="2" class="form-control" id="txtFrete"
-                                    placeholder="ex: R$ 25,00" name="frete" style="width: 100%;" />
+                                <input type="text" format="currency" precision="2" class="form-control" id="txtFrete"
+                                value="0,00" placeholder="ex: R$ 25,00" name="frete" style="width: 100%;" />
                             </div>
 
                             <div class="/*d-flex justify-content-around*/">
                                 <div class="input-group-text padd">
                                     <label for="nome" class="form-label">*Taxa de cartão: %&nbsp;</label>
                                     <input type="number" format="currency" class="form-control" id="txtCartaoP"
-                                        placeholder="ex: 70%" name="cartaoP" style="width: 100%; " />
+                                     placeholder="ex: 70%" name="cartaoP" style="width: 100%; " />
                                 </div>
                                 <div class="input-group-text padd ">
                                     <label for="nome" class="form-label">Taxa de cartão: R$&nbsp;</label>
-                                    <input type="number" format="currency" precision="2" class="form-control"
-                                        id="txtCartaoR" name="cartaoR" style="width: 100%; " readonly />
+                                    <input type="text" format="currency" precision="2" class="form-control"
+                                    value="0,00" id="txtCartaoR" name="cartaoR" style="width: 100%; " readonly />
                                 </div>
                             </div>
 
@@ -123,8 +123,8 @@ include "header.php";
                                 </div>
                                 <div class="input-group-text padd">
                                     <label for="nome" class="form-label">Imposto: R$&nbsp;</label>
-                                    <input type="number" format="currency" precision="2" class="form-control"
-                                        id="txtImpostoR" name="impostoR" style="width: 100%; " readonly />
+                                    <input type="text" format="currency" precision="2" class="form-control"
+                                    value="0,00" id="txtImpostoR" name="impostoR" style="width: 100%; " readonly />
                                 </div>
                             </div>
 
@@ -136,14 +136,14 @@ include "header.php";
                                 </div>
                                 <div class="input-group-text padd">
                                     <label for="nome" class="form-label">Comissão: R$&nbsp;</label>
-                                    <input type="number" format="currency" precision="2" class="form-control"
-                                        id="txtComissaoR" name="comissaoR" style="width: 100%; " readonly />
+                                    <input type="text" format="currency" precision="2" class="form-control"
+                                    value="0,00" id="txtComissaoR" name="comissaoR" style="width: 100%; " readonly />
                                 </div>
                             </div>
 
                             <div class="input-group-text padd">
                                 <label for="nome" class="form-label">Total: R$&nbsp;</label>
-                                <input type="number" format="currency" precision="2" class="form-control" id="txtTotal"
+                                <input type="text" format="currency" precision="2" class="form-control" id="txtTotal"
                                     name="total" style="width: 100%;" readonly />
                             </div>
 
@@ -153,28 +153,28 @@ include "header.php";
                     </div>
 
                     <div id="margem" class="container tab-pane fade"><br>
-                        <div class="d-flex justify-content-around">
-                            <div class="input-group-text padd col-sm-6">
-                                <label for="nome" class="form-label">Margem de Lucro Atual: %&nbsp;</label>
-                                <input type="number" format="currency" class="form-control" id="txtMLAP" name="mlap"
-                                    style="width: 100%; " readonly />
-                            </div>
-                            <div class="input-group-text padd col-sm-6">
+                        <div class="/*d-flex justify-content-around*/">
+                            <div class="input-group-text padd">
                                 <label for="nome" class="form-label">Margem de Lucro Atual: R$&nbsp;</label>
-                                <input type="number" format="currency" precision="2" class="form-control" id="txtMLAR"
+                                <input type="text" format="currency" precision="2" class="form-control" id="txtMLAR"
                                     name="mlar" style="width: 100%; " readonly />
                             </div>
+                            <div class="input-group-text padd">
+                                <label for="nome" class="form-label">Margem de Lucro Atual: %&nbsp;</label>
+                                <input type="text" format="currency" class="form-control" id="txtMLAP" name="mlap"
+                                    style="width: 100%; " readonly />
+                            </div>                            
                         </div>
 
-                        <div class="d-flex justify-content-around">
-                            <div class="input-group-text padd col-sm-6">
+                        <div class="/*d-flex justify-content-around*/">
+                            <div class="input-group-text padd ">
                                 <label for="nome" class="form-label">*Margem de Lucro Desejada: %&nbsp;</label>
-                                <input type="number" format="currency" class="form-control" id="txtMLDP" name="mldp"
+                                <input type="text" format="currency" class="form-control" id="txtMLDP" name="mldp"
                                     style="width: 100%; " />
                             </div>
-                            <div class="input-group-text padd col-sm-6">
+                            <div class="input-group-text padd ">
                                 <label for="nome" class="form-label">Margem de Lucro Desejada: R$&nbsp;</label>
-                                <input type="number" format="currency" precision="2" class="form-control" id="txtMLDR"
+                                <input type="text" format="currency" precision="2" class="form-control" id="txtMLDR"
                                     name="mldr" style="width: 100%; " readonly />
                             </div>
                         </div>
@@ -182,13 +182,13 @@ include "header.php";
 
                         <div class="input-group-text">
                             <label for="nome" class="form-label">*Fator de Correção: %&nbsp;</label>
-                            <input type="number" format="currency" class="form-control" id="txtFC"
-                                placeholder="Deixando em branco o padrão é 70%" name="fc" style="width: 100%; " />
+                            <input type="text" format="currency" class="form-control" id="txtFC"
+                                placeholder="Deixando em branco o padrão é 70%" value="70" name="fc" style="width: 100%; " />
                         </div>
 
                         <div class="input-group-text padd">
                             <label for="nome" class="form-label">Valor de Venda Necessário: R$&nbsp;</label>
-                            <input type="number" format="currency" precision="2" class="form-control" id="txtVVN"
+                            <input type="text" format="currency" precision="2" class="form-control" id="txtVVN"
                                 name="vvn" style="width: 100%; " readonly />
                         </div>
                     </div>
