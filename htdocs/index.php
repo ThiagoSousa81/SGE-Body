@@ -71,7 +71,7 @@ include "header.php";
                     <a id="tab2" class="nav-link" data-bs-toggle="tab" href="#margem">Margem de Lucro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#cpaeroas">CPA e ROAS</a>
+                    <a id="tab3" class="nav-link" data-bs-toggle="tab" href="#cpaeroas">CPA e ROAS</a>
                 </li>
             </ul>
 
@@ -155,12 +155,12 @@ include "header.php";
                     <div id="margem" class="container tab-pane fade"><br>
                         <div class="/*d-flex justify-content-around*/">
                             <div class="input-group-text padd">
-                                <label for="nome" class="form-label">Margem de Lucro Atual: R$&nbsp;</label>
+                                <label class="form-label">Margem de Lucro Atual: R$&nbsp;</label>
                                 <input type="text" format="currency" precision="2" class="form-control" id="txtMLAR"
                                     name="mlar" style="width: 100%; " readonly />
                             </div>
                             <div class="input-group-text padd">
-                                <label for="nome" class="form-label">Margem de Lucro Atual: %&nbsp;</label>
+                                <label class="form-label">Margem de Lucro Atual: %&nbsp;</label>
                                 <input type="text" format="currency" class="form-control" id="txtMLAP" name="mlap"
                                     style="width: 100%; " readonly />
                             </div>                            
@@ -168,12 +168,12 @@ include "header.php";
 
                         <div class="/*d-flex justify-content-around*/">
                             <div class="input-group-text padd ">
-                                <label for="nome" class="form-label">*Margem de Lucro Desejada: %&nbsp;</label>
-                                <input type="text" format="currency" class="form-control" id="txtMLDP" name="mldp"
+                                <label class="form-label">*Margem de Lucro Desejada: %&nbsp;</label>
+                                <input type="number" format="currency" class="form-control" id="txtMLDP" name="mldp"
                                     style="width: 100%; " />
                             </div>
                             <div class="input-group-text padd ">
-                                <label for="nome" class="form-label">Margem de Lucro Desejada: R$&nbsp;</label>
+                                <label class="form-label">Margem de Lucro Desejada: R$&nbsp;</label>
                                 <input type="text" format="currency" precision="2" class="form-control" id="txtMLDR"
                                     name="mldr" style="width: 100%; " readonly />
                             </div>
@@ -181,28 +181,40 @@ include "header.php";
 
 
                         <div class="input-group-text">
-                            <label for="nome" class="form-label">*Fator de Correção: %&nbsp;</label>
-                            <input type="text" format="currency" class="form-control" id="txtFC"
-                                placeholder="Deixando em branco o padrão é 70%" value="70" name="fc" style="width: 100%; " />
+                            <label class="form-label">*Fator de Correção: %&nbsp;</label>
+                            <input type="number" format="currency" class="form-control" id="txtFC"
+                                placeholder="ex: 70%" value="70" name="fc" style="width: 100%; " />
                         </div>
 
                         <div class="input-group-text padd">
-                            <label for="nome" class="form-label">Valor de Venda Necessário: R$&nbsp;</label>
+                            <label class="form-label">Valor de Venda Necessário: R$&nbsp;</label>
                             <input type="text" format="currency" precision="2" class="form-control" id="txtVVN"
                                 name="vvn" style="width: 100%; " readonly />
+                        </div>
+
+                        <div class="input-group-text padd">
+                            <label class="form-label">*Margem Mínima %&nbsp;</label>
+                            <input type="number" format="currency" class="form-control" id="txtMNP"
+                                name="mnp" style="width: 100%; " />
+                        </div>
+
+                        <div class="input-group-text padd">
+                            <label class="form-label">Margem Mínima R$&nbsp;</label>
+                            <input type="text" format="currency" precision="2" class="form-control" id="txtMNR"
+                                name="mnr" style="width: 100%; " readonly />
                         </div>
                     </div>
 
                     <div id="cpaeroas" class="container tab-pane fade"><br>
                         <div class="input-group-text">
-                            <label for="nome" class="form-label">CPA: R$&nbsp;</label>
-                            <input type="number" format="currency" precision="2" class="form-control" id="txtCPA"
+                            <label class="form-label">CPA: R$&nbsp;</label>
+                            <input type="" format="currency" precision="2" class="form-control" id="txtCPA"
                                 name="cpa" style="width: 100%; " readonly />
                         </div>
 
                         <div class="input-group-text padd">
-                            <label for="nome" class="form-label">ROAS Mínimo: %&nbsp;</label>
-                            <input type="number" format="currency" class="form-control" id="txtROAS" name="roas"
+                            <label class="form-label">ROAS Mínimo: %&nbsp;</label>
+                            <input type="" format="currency" class="form-control" id="txtROAS" name="roas"
                                 style="width: 100%; " readonly />
                         </div>
 
