@@ -12,25 +12,8 @@ body {
 
 
 .menu {
-    display: flex;
-    width: 25vw;
-    height: 80vh;
-    background-color: gray;
-    flex-direction: column;
-    overflow: scroll;
+    width: 100%;
 }
-
-@media (max-width: 1120px) {
-    .menu {
-        display: flex;
-        width: 75vw;
-        height: 90vh;
-        background-color: gray;
-        flex-direction: column;
-        overflow: scroll;
-    }
-}
-
 
 .menu button {
     width: 100%;
@@ -39,6 +22,7 @@ body {
 .menu a,
 h3 {
     margin: 5px;
+    width: 100%;
 }
 
 
