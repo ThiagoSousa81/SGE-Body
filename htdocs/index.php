@@ -34,7 +34,7 @@ $User = mysqli_fetch_array($query);
             ?>
             
 
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#demo"
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"
                 style="cursor:pointer">
 
                 <span class="navbar-toggler-icon"></span>
@@ -48,21 +48,26 @@ $User = mysqli_fetch_array($query);
 
     <main class="linha">
 
-        <div id="demo" class="collapse menu">
-
-            <h3><?php echo base64_decode($User[1]); ?></h3>
-
-            <hr>
-
-            <a href="https://sge-body.ebs.great-site.net/dashboards.php"><button type="button"
-                    class="btn btn-dark">Dashboards</button></a>
-
-            <a href="https://sge-body.ebs.great-site.net/preco.php"><button type="button"
-                    class="btn btn-dark">Precificação</button></a>
-
-            <a href="https://sge-body.ebs.great-site.net/confg.php"><button type="button"
-                    class="btn btn-dark">Configurações</button></a>
-
+        <div id="demo" class="offcanvas bg-dark offcanvas-start">
+            <div class="offcanvas-header text-white">
+                <h3 class="offcanvas-title"><?php echo base64_decode($User[1]); ?></h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+    
+                
+                <div class="btn-group-vertical menu">
+                    <a href="https://sge-body.ebs.great-site.net/dashboards.php"><button type="button"
+                        class="btn btn-secondary">Dashboards</button></a>
+    
+                    <a href="https://sge-body.ebs.great-site.net/preco.php"><button type="button"
+                            class="btn btn-secondary">Precificação</button></a>
+        
+                    <a href="https://sge-body.ebs.great-site.net/confg.php"><button type="button"
+                            class="btn btn-secondary">Configurações</button></a>
+                </div>
+                
+            </div>
         </div>
 
         <div class="cont">
