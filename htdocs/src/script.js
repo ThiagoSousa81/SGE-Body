@@ -111,11 +111,3 @@ document.getElementById('tab3').addEventListener('click', function () {
     txtCPA.value = formatMoeda(formatFloat(txtMLAR.value) - formatFloat(txtMNR.value));
     txtROAS.value = (formatFloat(txtPV.value) / formatFloat(txtCPA.value)).toFixed(2);
 })
-
-
-
-
-
-
-
-
