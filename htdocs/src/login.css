@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: linear-gradient(45deg, black, rgb(238, 45, 45), rgb(53, 53, 53));
+    width: 100%;
+    height: 100vh;                       
+    color: white;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 25vh;
+    margin-block: 0px;
+}
+form {
+    width: 25%;
+}
+
+@media (max-width: 1200px) {
+    form {
+        width: 75%;
+    }
+}
+form button{
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
