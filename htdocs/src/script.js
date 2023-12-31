@@ -24,7 +24,7 @@ const txtMLAP = document.getElementById('txtMLAP');
 
 const txtMLDP = document.getElementById('txtMLDP');
 
-const txtMLDR = document.getElementById('txtMLDR');
+//const txtMLDR = document.getElementById('txtMLDR');
 
 //const txtFC = document.getElementById('txtFC');
 
@@ -202,8 +202,8 @@ document.getElementById('tab2').addEventListener('click', function() {
 
 txtMLDP.addEventListener('input', function () {
 
-    txtMLDR.value = formatMoeda(formatFloat(txtTotal.value) * parseFloat(this.value.replace(",", ".")) / 100);
-
+    //txtMLDR.value = formatMoeda(formatFloat(txtTotal.value) * parseFloat(this.value.replace(",", ".")) / 100);
+    var mldr = formatFloat(txtTotal.value) * parseFloat(this.value.replace(",", ".")) / 100;
     txtVVN.value = formatMoeda(formatFloat(txtTotal.value) * 100 /  (100 - parseFloat(this.value.replace("%", ""))) /* parseFloat(txtFC.value.replace(",", ".")) */);
 
 });
