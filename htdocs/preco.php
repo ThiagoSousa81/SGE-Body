@@ -159,7 +159,7 @@ include "index.php";
 
                             <div class="input-group-text padd">
 
-                                <label for="nome" class="form-label">Total: R$&nbsp;</label>
+                                <label for="nome" class="form-label">Total de Custos: R$&nbsp;</label>
 
                                 <input type="text" format="currency" precision="2" class="form-control input-total" id="txtTotal"
                                     name="total" value="0,00" style="width: 100%;" readonly />
@@ -215,14 +215,14 @@ include "index.php";
 
                             </div>
 
-                            <div class="input-group-text padd ">
+                            <!--<div class="input-group-text padd ">
 
                                 <label class="form-label">Margem de Lucro Desejada: R$&nbsp;</label>
 
                                 <input type="text" format="currency" precision="2" class="form-control" id="txtMLDR"
                                     name="mldr" style="width: 100%; " readonly />
 
-                            </div>
+                            </div>-->
 
                         </div>
 
@@ -280,7 +280,7 @@ include "index.php";
 
                         <div class="input-group-text padd">
 
-                            <label class="form-label">*Porcentagem de CPA %&nbsp;</label>
+                            <label class="form-label">*Margem Mínima %&nbsp;</label>
 
                             <input type="text" format="currency" class="form-control" id="txtCPAP" name="cpap"
                                 style="width: 100%; " />
@@ -290,7 +290,7 @@ include "index.php";
 
                         <div class="input-group-text">
 
-                            <label class="form-label">CPA: R$&nbsp;</label>
+                            <label class="form-label">CPA com Margem Mínima: R$&nbsp;</label>
 
                             <input type="" format="currency" precision="2" class="form-control" id="txtCPA" name="cpa"
                                 style="width: 100%; " readonly />
