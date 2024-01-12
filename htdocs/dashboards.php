@@ -3,8 +3,6 @@ require "protection.php";
 include "index.php";
 ?>
 
-<div class="cont">
-
 <div class="text-dark">
   <div class="rounded bg-light p-3" style="
     margin-block-end: 20px;
@@ -83,8 +81,6 @@ include "index.php";
 
 </div>
 
-
-</div>
 
 <?php 
 include "footer.php";
