@@ -1,0 +1,6 @@
+ErrorDocument 400 https://ebs-systems.epizy.com/error/400/
+ErrorDocument 401 https://ebs-systems.epizy.com/error/401/
+ErrorDocument 403 https://ebs-systems.epizy.com/error/403/
+ErrorDocument 404 https://ebs-systems.epizy.com/error/404/
+ErrorDocument 503 https://ebs-systems.epizy.com/error/503/
+Redirect 302 /index.php https://sge-body.ebs.great-site.net/preco.php

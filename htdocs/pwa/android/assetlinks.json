@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "br.com.bodycruz.twa",
+        "sha256_cert_fingerprints": ["5A:CA:D7:26:CD:B4:56:12:23:B9:5F:07:82:AB:62:2D:54:83:CC:BF:E1:22:EC:D9:FD:19:58:5B:61:53:1B:10"]
+      }
+    }]

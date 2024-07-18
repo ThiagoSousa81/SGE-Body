@@ -1,10 +1,10 @@
 <?php
 Class database  
 {
-    private $usuario = 'xxx';
-    private $senha = 'xxxx';
-    private $database = 'xxxx';
-    private $host = 'xxxxx';
+    private $usuario = 'if0_34449232';
+    private $senha = 'vYP7KAmHCI';
+    private $database = 'if0_34449232_sge_body';
+    private $host = 'sql301.infinityfree.com';
     
     public function GetLinkMySQLI()
     {
