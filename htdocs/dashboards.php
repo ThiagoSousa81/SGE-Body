@@ -8,7 +8,7 @@ include "index.php";
     margin-block-end: 20px;
 ">
     <h4>Dashboard</h4>
-    <p>Algum texto..</p>
+    <p>Algum texto, seguido de um gráfigo Chart.js</p>
   </div>
   <div class="row" style="
     margin-block-end: 20px;
